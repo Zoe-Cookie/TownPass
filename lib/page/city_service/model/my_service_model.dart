@@ -33,6 +33,7 @@ abstract class MyServiceModel {
             MyServiceItemId.waterMeter,
             MyServiceItemId.essentialGoods,
             MyServiceItemId.library,
+            MyServiceItemId.yieldOurSeats,
           ],
         ),
         MyServiceCategory(

@@ -7,7 +7,6 @@ import 'package:flutter/material.dart';
 // First, add new service within the MyServiceItemId enum;
 // Then add MyServiceItem within MyServiceIdExt extension.
 
-
 enum MyServiceItemId {
   dedicatedLine,
   districtOffice,
@@ -29,7 +28,7 @@ enum MyServiceItemId {
   library,
   locationSearch,
   zoo,
-  ;
+  yieldOurSeats;
 }
 
 extension MyServiceIdExt on MyServiceItemId {
@@ -147,13 +146,20 @@ extension MyServiceIdExt on MyServiceItemId {
           title: '找地點',
           description: '提供各區日常服務地圖查找',
           icon: Assets.svg.iconLocationSearch24.svg(),
-          destinationUrl: 'https://taipei-pass-service.vercel.app/surrounding-service/',
+          destinationUrl:
+              'https://taipei-pass-service.vercel.app/surrounding-service/',
         ),
       MyServiceItemId.zoo => MyServiceItem(
           title: '愛遊動物園',
           description: '動物園區資訊導覽、線上地圖',
           icon: Assets.svg.iconZoo24.svg(),
           destinationUrl: '',
+        ),
+      MyServiceItemId.yieldOurSeats => MyServiceItem(
+          title: '讓座鈴服務',
+          description: '透過播放讓座鈴提醒民眾讓座',
+          icon: Assets.image.carSeat.image(),
+          destinationUrl: 'https://codefest-taipei-30eac.web.app/',
         ),
     };
   }
